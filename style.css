@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    border-top: 5px solid #009578;
+    border-bottom: 5px solid #009578;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.todo__value {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.todo:has(.todo__checkbox:checked) {
+    color: #555555;
+    background: #eeeeee;
+    text-decoration: line-through;
+    order: 1;
+}
